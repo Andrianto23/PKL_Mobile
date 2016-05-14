@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.kelompok_6.pkl_mobile.DetailProduk" >
+
+
+    <item
+        android:id="@+id/action_transaksi"
+        android:orderInCategory="100"
+        android:title="Transaksi"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_tambah"
+        android:orderInCategory="100"
+        android:title="Tambah"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_keluar"
+        android:orderInCategory="100"
+        android:title="Keluar"
+        app:showAsAction="never" />
+</menu>

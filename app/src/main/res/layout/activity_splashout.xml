@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/imageViewPkl"
+        android:src="@drawable/pklimage"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="@string/splash_out_text"
+        android:id="@+id/TextViewSplashOut"
+        android:layout_weight="1.7"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textColor="#000000" />
+
+</LinearLayout>

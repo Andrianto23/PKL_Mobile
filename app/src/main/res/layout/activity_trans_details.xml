@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/layoutWrapper"
+    tools:context="com.kelompok_6.pkl_mobile.DetailProduk">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutTitle"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="4"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/detail_transaksi"
+            android:id="@+id/title"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayoutDetailProdForm"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="3"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nama_produk"
+                android:id="@+id/textViewNamaProduk"
+                android:singleLine="false"
+                android:layout_weight="0"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/titik_dua"
+                android:id="@+id/textView9"
+                android:textAlignment="center"
+                android:layout_weight="0.1"
+                android:textColor="#000000" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextNamaProduk"
+                android:text="PlaceholderProduct"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:hint="&lt;iNamaProduk>"
+                android:inputType="text" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/harga_jual"
+                android:id="@+id/textViewHargaJual"
+                android:layout_weight="0"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/titik_dua"
+                android:id="@+id/textView11"
+                android:textAlignment="center"
+                android:layout_weight="0.1"
+                android:textColor="#000000" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/editTextHargaJual"
+                android:text="100000"
+                android:layout_weight="1"
+                android:singleLine="false"
+                android:textColor="#000000"
+                android:hint="&lt;iHargaJual>" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/kuantitas"
+                android:id="@+id/textViewKuantitas"
+                android:layout_weight="0"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/titik_dua"
+                android:id="@+id/textView13"
+                android:textAlignment="center"
+                android:layout_weight="0.1"
+                android:textColor="#000000" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/editTextKuantitas"
+                android:text="5"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:hint="&lt;iQtyJual>" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="3">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Proses"
+                android:id="@+id/buttonProses"
+                android:layout_alignParentEnd="false"
+                android:layout_alignParentStart="false"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentBottom="false"
+                android:layout_alignParentRight="true"
+                android:background="@android:color/holo_red_light"
+                android:layout_marginRight="40dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Batal"
+                android:id="@+id/buttonBatal"
+                android:layout_alignParentStart="false"
+                android:layout_alignParentBottom="false"
+                android:layout_alignParentLeft="true"
+                android:background="@android:color/holo_red_light"
+                android:layout_marginLeft="40dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

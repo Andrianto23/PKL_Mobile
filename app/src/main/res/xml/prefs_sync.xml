@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="Data Synchronization">
+        <CheckBoxPreference
+            android:title="Enabled Data Synchronization"
+            android:summary="Is Data Synchronization actived?"
+            android:key="data_synchronization"
+            android:defaultValue="false"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Data Synchronization options">
+        <ListPreference
+            android:title="Periodically Synchronization"
+            android:key="periodically"
+            android:dependency="data_synchronization"
+            android:summary="Select Interval"
+            android:entries="@array/interval"
+            android:entryValues="@array/interval_values"/>
+        <CheckBoxPreference
+            android:title="Login Logout Synchronization"
+            android:summary="is Login Logout Synchronization enabled?"
+            android:key="login_logout_sync"
+            android:dependency="data_synchronization"
+            android:defaultValue="false"/>
+        <CheckBoxPreference
+            android:title="Update Data Directly Synchronization"
+            android:summary="is Update Data Directly Synchronization enabled?"
+            android:key="update_data_directly"
+            android:dependency="data_synchronization"
+            android:defaultValue="false"/>
+    </PreferenceCategory>
+</PreferenceScreen>
